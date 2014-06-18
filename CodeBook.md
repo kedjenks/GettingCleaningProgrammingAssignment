@@ -6,8 +6,11 @@ Code Book:
 Variable Information:
 
 Subject Number:
+
      1 to 30 - the volunteer number
+     
 Activity (one of 6 possible values): 
+
      WALKING - collected while subject was walking
      SITTING - collected while subject was sitting
      STANDING - collected while subject was standing
@@ -17,6 +20,7 @@ Activity (one of 6 possible values):
 
 Sensor Data:
 Mean and standard deviation data was gathered per sensor<Mean/StdDev>.  Some sensors also have multiple readings (one per 3 dimensional axis) <X/Y/Z>Axis
+
 See legend below for explanation of all components.  All are unitless as they are normalized data.
 
      Time_BodyMotion_Accelerometer_<Mean/StdDev>_<X/Y/Z>Axis
