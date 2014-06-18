@@ -38,26 +38,17 @@ See legend below for explanation of all components.  All are unitless as they ar
      Frequency_BodyMotion_Gyroscope_JerkMagnitude_<Mean/StdDev>_
 
 Legend:
+
      Time_ : data point is collected with respect to the time domain
-     
      Frequency_ : data point is collected with respect to the frequency domain
-     
      Mean_ : data point is a mean over the time window of collection
-     
      StdDev_ : data point is a standard deviation over the time window of collection
-     
      BodyMotion_ : data point corresponds to body motion component of acceleartion signal from sensor
-     
      Gravitational_: data point corresponds to gravitational componenent of acceleartion signal from sensor
-     
      Accelerometer_ : data point collected using accelerometer
-     
      Gyroscope_: data point collected using gyroscopic sensor
-     
      Jerk_ : data point is Jerk (rate of change of acceleration)
-     
      Magnitude_ : data point is magnitude
-     
      JerkMagnitude: data point is magnitude of jerk 
 
 Data Summary Process:
