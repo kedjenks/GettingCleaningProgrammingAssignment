@@ -1,9 +1,15 @@
 CodeBook for Getting and Cleaning Data Programming Assignment
 ========================================================
 
+Data Summary Process:
+=====================
+The final data calculated in the tidy data set is the average of each variable for each activity and each subject.  Each variable in this case was either a *mean() or *std() variable which was grepped from the beginning initial UCI HAR dataset.  Each observation of a variable for each activity and each subject was combined then into a mean value.  
+
+For instance, all observations of Time_BodyMotion_Accelerometer_Mean_Xaxis for subject 1 while he/she was SITTING was averaged into one data value. This was done for all observations which created a wide tidy dataset.
+
 Code Book:
 ==========
-Variable Information:
+Variable Information.
 
 Subject Number:
 
@@ -18,10 +24,11 @@ Activity (one of 6 possible values):
      WALKING_UPSTAIRS - collected while subject was walking up stairs
      WALKING_DOWNSTAIRS - collected while subject was walking down stairs
 
-Sensor Data:
-Mean and standard deviation data was gathered per sensor<Mean/StdDev>.  Some sensors also have multiple readings (one per 3 dimensional axis) <X/Y/Z>Axis
+Sensor Reading Data: 
 
-See legend below for explanation of all components.  All are unitless as they are normalized data.
+The various sensor reading variables are combinations of multiple component meanings.  They are summarized below in a compressed format with explanations for each subcomponent.  Mean and standard deviation data was gathered per sensor reading (<Mean/StdDev> means either Mean OR StdDev).  Some sensors also have multiple readings corresponding to one of the 3 dimensional axes (<X/Y/Z>Axis means either XAxis OR YAxis OR ZAxis)
+
+See legend below for explanation of all components.  All are unitless as they are normalized over the data collection period.
 
      Time_BodyMotion_Accelerometer_<Mean/StdDev>_<X/Y/Z>Axis
      Time_Gravitational_Accelerometer_<Mean/StdDev>_<X/Y/Z>Axis
@@ -45,19 +52,23 @@ Legend:
 
      Time_ : data point is collected with respect to the time domain
      Frequency_ : data point is collected with respect to the frequency domain
-     Mean_ : data point is a mean over the time window of collection
-     StdDev_ : data point is a standard deviation over the time window of collection
+     
      BodyMotion_ : data point corresponds to body motion component of acceleartion signal from sensor
      Gravitational_: data point corresponds to gravitational componenent of acceleartion signal from sensor
+     
      Accelerometer_ : data point collected using accelerometer
      Gyroscope_: data point collected using gyroscopic sensor
+     
      Jerk_ : data point is Jerk (rate of change of acceleration)
-     Magnitude_ : data point is magnitude
+     Magnitude_ : data point is pure magnitude of sensor reading
      JerkMagnitude: data point is magnitude of jerk 
-
-Data Summary Process:
-=====================
-The final data calculated in the tidy data set is the average of each variable for each activity and each subject.  Each variable in this case was either a *mean() or *std() variable.  Each observation of a variable for each activity and each subject was combined into a mean value.  For instance, all observations of Time_BodyMotion_Accelerometer_Mean_Xaxis for subject 1 while he/she was SITTING was averaged into one data value. 
+     
+     Mean_ : data point is a mean over the time window of collection
+     StdDev_ : data point is a standard deviation over the time window of collection
+     
+     XAxis : data point is the X axis component of the sensor reading
+     YAxis : data point is the Y axis component of the sensor reading
+     ZAxis : data point is the Z axis component of the sensor reading
 
 Study Design:
 ============
