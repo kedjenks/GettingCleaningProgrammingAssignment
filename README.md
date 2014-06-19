@@ -7,13 +7,12 @@ There is only one script for this assignment (run_analysis.R).  All of the assig
 
 To Run:
 
-1) Make sure UCI HAR Dataset is extracted to a folder <working directory>/UCI HAR Dataset.
-2) Place the run_analysis.R script in the working directory.
-3) From the command line:
-     source('<working directory>/run_analysis.R')
-4) The script will generate a text file called tidy_data_set.txt in <working directory>.  This text file is generated using the write.table function in R.
-5) The text file is most easily read by reading back into R using read.table.
-
+     1) Make sure UCI HAR Dataset is extracted to a folder <working directory>/UCI HAR Dataset.
+     2) Place the run_analysis.R script in the working directory.
+     3) From the command line:
+          source('<working directory>/run_analysis.R')
+     4) The script will generate a text file called tidy_data_set.txt in <working directory>.  This text file is generated using the write.table function in R.
+     5) The text file is most easily read by reading back into R using read.table.
 
 Script Details:
 
